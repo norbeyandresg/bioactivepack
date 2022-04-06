@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Home from "../components/Home";
 const Index = () => {
   return (
-    <Layout pageTitle="Landing Page Nextjs">
+    <Layout pageTitle="Bioactive Pack">
       <Header />
       <Home/>
     </Layout>
