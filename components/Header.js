@@ -31,7 +31,7 @@ const Header = () => {
     <div className={`header${sticky ? " sticky" : ""}`}>
       <Container>
         <Navbar light expand="md">
-          <NavbarBrand href="/">BIOACTIVE PAKC</NavbarBrand>
+          <NavbarBrand href="/">BIOACTIVE PACK</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="m-auto" navbar>
@@ -39,13 +39,15 @@ const Header = () => {
                 <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#feature">Features</NavLink>
+                <NavLink href="/project-description">Description</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#service">Services</NavLink>
+                <NavLink href="/faq">FAQ</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink href="#about">About</NavLink>
+              <NavItem className="my-auto">
+                <NavLink href="/matrix">
+                  <div className="try-button">Try It Out</div>
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>
