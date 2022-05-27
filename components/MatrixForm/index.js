@@ -7,6 +7,8 @@ import {
   InputGroup,
   InputGroupText,
   Button,
+  Row,
+  Col,
 } from "reactstrap";
 
 const TextInput = ({ label, ...props }) => {
@@ -14,7 +16,9 @@ const TextInput = ({ label, ...props }) => {
   return (
     <>
       <FormGroup>
-        <Label htmlFor={props.id || props.name}>{label}</Label>
+        <Label htmlFor={props.id || props.name} className="fw-light">
+          {label}
+        </Label>
         <InputGroup>
           <Input
             className="text-input"
@@ -22,6 +26,7 @@ const TextInput = ({ label, ...props }) => {
             {...props}
             type="number"
             step="0.01"
+            placeholder="0.00"
           />
           {props.unittext && <InputGroupText>{props.unittext}</InputGroupText>}
         </InputGroup>
@@ -54,14 +59,14 @@ const MatrixForm = ({ handleOnSubmit }) => {
   return (
     <Formik
       initialValues={{
-        humidity: 0,
-        waterActivity: 0,
-        mnfs: 0,
-        ph: 0,
-        fat: 0,
-        fdm: 0,
-        protein: 0,
-        minerals: 0,
+        humidity: "",
+        waterActivity: "",
+        mnfs: "",
+        ph: "",
+        fat: "",
+        fdm: "",
+        protein: "",
+        minerals: "",
         termsConditions: false,
       }}
       onSubmit={(values, { setSubmitting }) => {
@@ -70,57 +75,79 @@ const MatrixForm = ({ handleOnSubmit }) => {
     >
       {({ isSubmitting, termsConditions }) => (
         <Form>
-          <TextInput
-            label="Humidity"
-            name="humidity"
-            min="0"
-            max="100"
-            unittext="%"
-          />
-          <TextInput
-            label="Water Activity"
-            name="waterActivity"
-            min="0"
-            max="1"
-          />
-          <TextInput
-            label="Moinsture Non-Fat Substance (MNFS)"
-            name="mnfs"
-            min="0"
-            max="100"
-            unittext="%"
-          />
-          <TextInput label="pH" name="ph" type="decimal" min="0" max="14" />
-          <TextInput label="Fat" name="fat" min="0" max="100" unittext="%" />
-          <TextInput
-            label="Fat in Dry Matter (FDM)"
-            name="fdm"
-            min="0"
-            max="100"
-            unittext="%"
-          />
-          <TextInput
-            label="Protein"
-            name="protein"
-            min="0"
-            max="100"
-            unittext="%"
-          />
-          <TextInput
-            label="Minerals"
-            name="minerals"
-            min="0"
-            max="100"
-            unittext="%"
-          />
-          <Checkbox name="termsConditions">
-            {" "}
-            I understand this materials may not work or have abverse effects on
-            my products
-          </Checkbox>
-          <Button color="success" type="submit">
-            Find Materials
-          </Button>
+          <p className="text-dark fs-4">
+            <span className="fw-bold">Cheese</span> Description
+          </p>
+          <Row>
+            <Col>
+              <TextInput
+                label="Humidity"
+                name="humidity"
+                min="0"
+                max="100"
+                unittext="%"
+              />
+              <TextInput
+                label="Water Activity"
+                name="waterActivity"
+                min="0"
+                max="1"
+              />
+              <TextInput
+                label="Moinsture Non-Fat Substance (MNFS)"
+                name="mnfs"
+                min="0"
+                max="100"
+                unittext="%"
+              />
+              <TextInput label="pH" name="ph" type="decimal" min="0" max="14" />
+            </Col>
+            <Col>
+              <TextInput
+                label="Fat"
+                name="fat"
+                min="0"
+                max="100"
+                unittext="%"
+              />
+              <TextInput
+                label="Fat in Dry Matter (FDM)"
+                name="fdm"
+                min="0"
+                max="100"
+                unittext="%"
+              />
+              <TextInput
+                label="Protein"
+                name="protein"
+                min="0"
+                max="100"
+                unittext="%"
+              />
+              <TextInput
+                label="Minerals"
+                name="minerals"
+                min="0"
+                max="100"
+                unittext="%"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Checkbox name="termsConditions">
+              {" "}
+              I understand this materials may not work or have adverse effects
+              on my products
+            </Checkbox>
+            <Button
+              color="warning"
+              outline
+              type="submit"
+              className="w-25 mx-auto"
+            >
+              Find Materials
+            </Button>
+          </Row>
         </Form>
       )}
     </Formik>

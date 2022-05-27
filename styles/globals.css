@@ -3,6 +3,7 @@
   --secondary-color: #815bba;
   --main-dark: #1b0140;
   --rgba-secondary-color: rgba(76, 54, 110, 0.4);
+  --rgba-primary-color: rgba(165, 116, 237, 0.7);
 }
 html,
 body {
@@ -28,8 +29,8 @@ a {
 }
 
 .material-card {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 250px;
   margin: 12px auto;
   box-shadow: 5px 5px 10px -2px gray;
   border-radius: 8px;
@@ -123,6 +124,8 @@ a {
   border-radius: 15px !important;
   overflow: hidden;
   margin-bottom: 120px;
+  background-color: white;
+  box-shadow: 3px 3px 15px -4px white;
 }
 
 .table-header {
@@ -133,4 +136,38 @@ a {
 .table-weights {
   background-color: var(--secondary-color);
   color: white;
+}
+
+.numeral {
+  background-color: var(--main-dark);
+  border-radius: 50%;
+  padding: 6px 12px;
+}
+
+.text-dark {
+  color: var(--main-dark) !important;
+}
+
+.form-container {
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 0px 15px -4px var(--main-color);
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  background-color: var(--rgba-primary-color);
+  color: white;
+}
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }

@@ -6,7 +6,7 @@ const MaterialCard = (m) => {
       <div className="material-weight">
         <div>{m.weight}</div>
       </div>
-      <div className="card-title">{m.id}</div>
+      <div className="card-title">{m.name}</div>
       <div className="card-content">
         This is a brief description of the material with some relevant elements
       </div>

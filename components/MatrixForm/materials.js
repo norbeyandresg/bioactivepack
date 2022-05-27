@@ -4,8 +4,8 @@ const max_int = Number.MAX_SAFE_INTEGER;
 export const rawMaterials = [
   {
     id: 1,
-    name: "quitosano",
-    antimicAgent: "moringa oil",
+    name: "Chitosan",
+    antimicAgent: "Natamycin",
     weight: 91.5,
     humidity: { low: 36.2, high: 40.2 },
     waterActivity: { low: 0.94, high: 0.99 },
@@ -18,8 +18,8 @@ export const rawMaterials = [
   },
   {
     id: 2,
-    name: "",
-    antimicAgent: "",
+    name: "Chitosan / Whey Protein",
+    antimicAgent: "-",
     weight: 59.5,
     humidity: { low: 64.4, high: 68.4 },
     waterActivity: { low: 0.9, high: 0.99 },
@@ -32,7 +32,7 @@ export const rawMaterials = [
   },
   {
     id: 9,
-    name: "",
+    name: "Default",
     antimicAgent: "",
     weight: 75,
     humidity: { low: 40, high: 50 },
@@ -46,7 +46,7 @@ export const rawMaterials = [
   },
   {
     id: 10,
-    name: "",
+    name: "Default",
     antimicAgent: "",
     weight: 85,
     humidity: { low: 50, high: 58 },
@@ -60,7 +60,7 @@ export const rawMaterials = [
   },
   {
     id: 13,
-    name: "",
+    name: "Default",
     antimicAgent: "",
     weight: 82,
     humidity: { low: 60.5, high: 64.5 },
@@ -74,7 +74,7 @@ export const rawMaterials = [
   },
   {
     id: 14,
-    name: "",
+    name: "Default",
     antimicAgent: "",
     weight: 37,
     humidity: { low: 36.2, high: 41 },
@@ -88,7 +88,7 @@ export const rawMaterials = [
   },
   {
     id: 15,
-    name: "",
+    name: "Default",
     antimicAgent: "",
     weight: 85,
     humidity: { low: 64.4, high: 68.4 },
@@ -102,7 +102,7 @@ export const rawMaterials = [
   },
   {
     id: 16,
-    name: "",
+    name: "Default",
     antimicAgent: "",
     weight: 80,
     humidity: { low: 68, high: 74 },
@@ -116,7 +116,7 @@ export const rawMaterials = [
   },
   {
     id: 17,
-    name: "",
+    name: "Default",
     antimicAgent: "",
     weight: 58.5,
     humidity: { low: 50, high: 60 },
@@ -130,7 +130,7 @@ export const rawMaterials = [
   },
   {
     id: 26,
-    name: "",
+    name: "Default",
     antimicAgent: "",
     weight: 59.5,
     humidity: { low: 47.21, high: 51.21 },
@@ -144,7 +144,7 @@ export const rawMaterials = [
   },
   {
     id: 31,
-    name: "",
+    name: "Default",
     antimicAgent: "",
     weight: 64,
     humidity: { low: 68, high: 74 },
