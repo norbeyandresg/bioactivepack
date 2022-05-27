@@ -114,8 +114,8 @@ const Home = () => {
                   className="table-image"
                   alt="table"
                   src="/images/table.png"
-                  width="360"
-                  height="500"
+                  width="600"
+                  height="300"
                 />
               </div>
             </Col>
@@ -141,13 +141,24 @@ const Home = () => {
           </div>
         </Container>
       </section>
-      <section className="section position-relative">
+
+      <section className="section position-relative main-background-color">
         <Container>
+          <p className="fs-2 text-end text-white">
+            How it <span className="fw-bold fs-1">works</span> ?
+          </p>
+          <p className="text-white text-center w-75 mx-auto fst-italic">
+            <span className="numeral fw-bold">1</span> Each material&apos;s
+            property has been evaluated and set a weight betweeh 1 and 6. The
+            values are describe as following: 1: poor, 2: minimum, 3: medium, 4:
+            significant, 5: quite significat, 6: highly significat
+          </p>
+          <p className="fs-3 text-white">Materials</p>
           <div className="table-container">
             <table className="table text-center">
               <thead className="table-header">
                 <tr>
-                  <th scope="col">Material</th>
+                  <th scope="col">Identifier</th>
                   <th scope="col">Microbial Control</th>
                   <th scope="col">Sensory Evaluation</th>
                   <th scope="col">Statistics Analysis</th>
@@ -282,11 +293,18 @@ const Home = () => {
             </table>
           </div>
 
+          <p className="text-white text-center w-75 mx-auto fst-italic">
+            <span className="numeral fw-bold">2</span> Each evaluated property
+            has been set a value betweeh 0 and 5. The values are describe as
+            following: 0: no importance, 2: minimum importance, 3: medium
+            importance, 4: brief importance, 5: high importance
+          </p>
+          <p className="fs-3 text-white">Coatings</p>
           <div className="table-container">
             <table className="table text-center">
               <thead className="table-header">
                 <tr>
-                  <th scope="col">Coatnings</th>
+                  <th scope="col">Identifier</th>
                   <th scope="col">Microbial Control</th>
                   <th scope="col">Sensory Evaluation</th>
                   <th scope="col">Statistics Analysis</th>
@@ -322,6 +340,14 @@ const Home = () => {
               </tbody>
             </table>
           </div>
+        </Container>
+      </section>
+
+      <section className="section position-relative">
+        <Container>
+          <Row>
+            <Col></Col>
+          </Row>
         </Container>
       </section>
     </>

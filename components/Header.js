@@ -33,14 +33,14 @@ const Header = () => {
         <Navbar light expand="md">
           <NavbarBrand href="/">BIOACTIVE PACK</NavbarBrand>
           <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="m-auto" navbar>
+          <Collapse isOpen={isOpen} navbar className="justify-content-end">
+            <Nav navbar>
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink href="/project-description">Description</NavLink>
-              </NavItem>
+              {/* <NavItem> */}
+              {/*   <NavLink href="/project-description">Description</NavLink> */}
+              {/* </NavItem> */}
               <NavItem>
                 <NavLink href="/faq">FAQ</NavLink>
               </NavItem>
