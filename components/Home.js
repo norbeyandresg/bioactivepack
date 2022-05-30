@@ -9,7 +9,7 @@ const Home = () => {
         <Container>
           <Row className="text-center">
             <h1 className="mb-5 fw-light text-white">
-              cheese <span className="fw-bold">active packaging</span> decision
+              Cheese <span className="fw-bold">active packaging</span> decision
               matrix
             </h1>
           </Row>

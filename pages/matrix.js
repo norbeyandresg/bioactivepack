@@ -28,8 +28,8 @@ const Matrix = () => {
       let validProps = [];
       for (const prop in material) {
         if (
-          typeof material[prop] === "object" &&
-          validateMaterialProp(values[prop], material[prop])
+          typeof material[prop] === "object"
+          // validateMaterialProp(values[prop], material[prop])
         ) {
           validProps = [...validProps, prop];
         }
@@ -55,21 +55,27 @@ const Matrix = () => {
         </Row>
         <Row>
           <p className="text-center">
-            At the end of this long jurney of research development this is our
-            final result, a parametric tool that can provide the best material
-            for a certain type of cheese given it&apos;s properties. The only
-            thing you need to do is set the corresponding values for your cheese
-            in the fields below and click the button{" "}
-            <span className="fw-bold fst-italic"> Find Materials </span>, and
-            the tool will provide you a list with all the posible materials that
-            can work for your cheese.
+            To conclude with this research journey this is our final result, a
+            parametric tool that can provide the best material for a certain
+            type of cheese given its properties. The only thing you need to do
+            is set the corresponding values for your cheese in the fields below
+            and click the button 
+            <span className="fst-italic fw-bold "> Find Materials</span>, and
+            the tool will provide you with a list of all the possible materials
+            that can work for your cheese.
           </p>
-          <p className="text-center">
-            Since the types and conditions for the ceeses in this study are not
-            the same as the ones we have and produce in{" "}
-            <span className="fw-bold">Colombia</span> the materials and coatings
-            show below may not work as well for your product, or can cause
-            adverse effects on it.
+          <p className="fst-italic ">
+            <span className="fw-bold">Disclaimers:</span> Since the types of
+            cheese and environmental conditions of the studies evaluated are not
+            the same as the ones we have in Colombia, the materials and coatings
+            showed below may not work as well for your product or can cause
+            adverse effects on it. The decision matrix is yet to be validated by
+            cheese producers in Colombia. It is aslo important to clarify that
+            the decision matrix was originally created having five Colombian
+            cheeses in mind: Antioquian, farmer cheese, cheese from Huila,
+            Mozzarella and double cream cheese, so although It works for a
+            various range of values it may still contain error due to the
+            reference to which it was created.
           </p>
         </Row>
         <Row>

@@ -19,7 +19,12 @@ export const rawMaterials = [
   {
     id: 2,
     name: "Chitosan / Whey Protein",
-    antimicAgent: "-",
+    antimicAgent: "Antimicrobial Properties",
+    inhibit:
+      "molds, yeasts, bacteria and coliforms. Specifically Pseudomonas Aeruginosa and some Penicillium",
+    references:
+      "Meira, S.M.M.; Zehetmeyer, G.; Scheibel, J.M.; Werner, J.O.; Brandelli, A. Starch-halloysite nanocomposites containing nisin: Characterization and inhibition of Listeria monocytogenes in soft cheese. LWT-Food Sci. Technol. 2016, 68, 226–234.",
+    observations: ["an item", "second item", "another item"],
     weight: 59.5,
     humidity: { low: 64.4, high: 68.4 },
     waterActivity: { low: 0.9, high: 0.99 },
@@ -32,8 +37,8 @@ export const rawMaterials = [
   },
   {
     id: 9,
-    name: "Default",
-    antimicAgent: "",
+    name: "Starch/Haloysite/Nanocomposite Films",
+    antimicAgent: "Nisin",
     weight: 75,
     humidity: { low: 40, high: 50 },
     waterActivity: { low: 0.9, high: 0.99 },
@@ -46,8 +51,8 @@ export const rawMaterials = [
   },
   {
     id: 10,
-    name: "Default",
-    antimicAgent: "",
+    name: "Alginate",
+    antimicAgent: "Oregano/Rosemary Essential Oils",
     weight: 85,
     humidity: { low: 50, high: 58 },
     waterActivity: { low: 0.94, high: 0.99 },
@@ -60,8 +65,8 @@ export const rawMaterials = [
   },
   {
     id: 13,
-    name: "Default",
-    antimicAgent: "",
+    name: "Sodium Alginic Acid",
+    antimicAgent: "Silver Montmorillonite Nanoparticles",
     weight: 82,
     humidity: { low: 60.5, high: 64.5 },
     waterActivity: { low: min_int, high: max_int },
@@ -74,8 +79,8 @@ export const rawMaterials = [
   },
   {
     id: 14,
-    name: "Default",
-    antimicAgent: "",
+    name: "Sodium Alginate",
+    antimicAgent: "Potassium Sorbate",
     weight: 37,
     humidity: { low: 36.2, high: 41 },
     waterActivity: { low: 0.93, high: 0.99 },
@@ -88,8 +93,8 @@ export const rawMaterials = [
   },
   {
     id: 15,
-    name: "Default",
-    antimicAgent: "",
+    name: "Fish Gelatin Biodegradable Film",
+    antimicAgent: "Lepidium Stavium Extract",
     weight: 85,
     humidity: { low: 64.4, high: 68.4 },
     waterActivity: { low: 0.9, high: 0.99 },
@@ -102,8 +107,8 @@ export const rawMaterials = [
   },
   {
     id: 16,
-    name: "Default",
-    antimicAgent: "",
+    name: "Semolina Flour and Nanocomposites (zinc oxide)",
+    antimicAgent: "Antimicrobial Properties",
     weight: 80,
     humidity: { low: 68, high: 74 },
     waterActivity: { low: 0.9, high: 0.95 },
@@ -116,8 +121,8 @@ export const rawMaterials = [
   },
   {
     id: 17,
-    name: "Default",
-    antimicAgent: "",
+    name: "Chitosano",
+    antimicAgent: "Moringa Oil",
     weight: 58.5,
     humidity: { low: 50, high: 60 },
     waterActivity: { low: min_int, high: max_int },
@@ -130,8 +135,8 @@ export const rawMaterials = [
   },
   {
     id: 26,
-    name: "Default",
-    antimicAgent: "",
+    name: "Triticale Flour with Bacteriocin-like substance",
+    antimicAgent: "Antimicrobial Properties",
     weight: 59.5,
     humidity: { low: 47.21, high: 51.21 },
     waterActivity: { low: 0.9, high: 0.99 },
@@ -144,8 +149,8 @@ export const rawMaterials = [
   },
   {
     id: 31,
-    name: "Default",
-    antimicAgent: "",
+    name: "Whey Protein Isolate Nanofibers",
+    antimicAgent: "Carvacrol",
     weight: 64,
     humidity: { low: 68, high: 74 },
     waterActivity: { low: 0.85, high: 0.95 },
