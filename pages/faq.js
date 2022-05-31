@@ -133,6 +133,69 @@ const FAQ = () => {
                 error.
               </p>
             </AccordionItem>
+
+            <AccordionItem
+              label="Why do good manufacturing practices influence the efficiency of cheese packaging or coating?"
+              collapseId="manufactureProperties"
+            >
+              When manufacturing practices are not carried out, the place where
+              the product is made, the personnel who have direct or indirect
+              contact with the product and the place, can contaminate the cheese
+              and even the packaging material, since this is of biological
+              origin, which causes losses.
+            </AccordionItem>
+
+            <AccordionItem
+              label="Why is the safety of cheese processing and packaging elements so important?"
+              collapseId="importanceOfElements"
+            >
+              Induces the propagation of microorganisms, which can cause
+              illnesses in people who consume it.
+            </AccordionItem>
+
+            <AccordionItem
+              label="Why is cheese production in developed countries higher than in developing countries if the latter get more milk?"
+              collapseId="outProduction"
+            >
+              In Colombia there are no technologies to increase the amount of
+              cheese produced and there is also a lack of information on the
+              alternatives that could be tested to avoid losses and expand the
+              range of products such as cheese. World milk production in
+              developing countries is approximately{" "}
+              <span className="fw-bold">500</span> thousand tons and in
+              developed countries <span className="fw-bold">400</span> thousand
+              tons, so it can be said that milk production in developing
+              countries is higher than in developed countries. However, world
+              cheese production in developing countries is much lower than in
+              developed countries, being <span className="fw-bold">5 </span>{" "}
+              thousand tons and <span className="fw-bold">20</span>
+              thousand tons respectively, so it is possible that this is due to
+              the lack of technologies in the production of cheese, or the waste
+              of these products due to the lack of packaging to preserve the
+              product, prevent or inhibit its contamination.
+            </AccordionItem>
+
+            <AccordionItem
+              label="How does active packaging work in food protection?"
+              collapseId="activePackagingWorks"
+            >
+              To understand how active packaging works, three elements must be
+              taken into account: packaging, food and environment, which
+              interact with each other, where the role of the packaging in this
+              case is to protect the food from external contamination, together
+              with an antimicrobial agent or active compound that, in addition
+              to protecting the food, allows it to last much longer.
+            </AccordionItem>
+
+            <AccordionItem
+              label="Why pay more for a product just because it is a greener alternative for the environment?"
+              collapseId="morePayment"
+            >
+              Because it not only protects the product from contamination and is
+              environmentally friendly, it also reduces product losses because
+              the active components of both the packaging and the antimicrobial
+              agent make the product last much longer.
+            </AccordionItem>
           </div>
         </Container>
       </section>

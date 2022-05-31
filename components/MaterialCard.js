@@ -53,19 +53,16 @@ const MaterialCard = (m) => {
           <ul className="list-group list-group-flush">
             {m.observations
               ? m.observations.map((o) => (
-                  <li className="list-group-item" key={o}>
+                  <li className="list-group-item text-center my-2" key={o}>
                     {o}
                   </li>
                 ))
               : ""}
-            <li className="list-group-item">An item</li>
-            <li className="list-group-item">A second item</li>
-            <li className="list-group-item">A third item</li>
           </ul>
           <label className="fst-italic text-muted fw-light mt-3">
             references:
           </label>
-          <label className="card-subttitle ">
+          <label className="fw-light text-break">
             {m.references ? m.references : ""}
           </label>
         </AccordionItem>
