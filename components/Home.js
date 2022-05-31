@@ -343,11 +343,93 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="section position-relative">
+      <section className="section position-relative ">
         <Container>
-          <Row>
-            <Col></Col>
-          </Row>
+          <p className="fs-3 mb-5">
+            Local evaluated <span className="fw-bold">Cheeses</span> for this
+            research
+          </p>
+          <div className="table-container">
+            <table className="table text-center">
+              <thead className="table-header">
+                <tr>
+                  <td className="table-light" />
+                  <td colSpan="6">cheese properties</td>
+                  <td colSpan="2" className="table-light">
+                    tolerances
+                  </td>
+                </tr>
+                <tr>
+                  <th className="table-light" />
+                  <th scope="col">Humidity</th>
+                  <th scope="col">WA</th>
+                  <th scope="col">pH</th>
+                  <th scope="col">Fat</th>
+                  <th scope="col">Protein</th>
+                  <th scope="col">Minerals</th>
+                  <th scope="col">MNFS</th>
+                  <th scope="col">FDM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Quesito Antioqueno</td>
+                  <td>63.37</td>
+                  <td>0.96</td>
+                  <td>6.35</td>
+                  <td>46.25</td>
+                  <td>12.73</td>
+                  <td>3.56</td>
+                  <td>&gt;67</td>
+                  <td>56-60</td>
+                </tr>
+                <tr>
+                  <td>Queso Campesino</td>
+                  <td>48-49</td>
+                  <td>0.9</td>
+                  <td>6.13-6.33</td>
+                  <td>&gt;21</td>
+                  <td>17.13-18.97</td>
+                  <td>3.56</td>
+                  <td>61-69</td>
+                  <td>25-60</td>
+                </tr>
+                <tr>
+                  <td>Quesillo Tolimense/Huilense</td>
+                  <td>49-55</td>
+                  <td>0.96-0.98</td>
+                  <td>5.2-5.9</td>
+                  <td>26-32</td>
+                  <td>19-22</td>
+                  <td>1.1-1.5</td>
+                  <td>61-69</td>
+                  <td>25-60</td>
+                </tr>
+                <tr>
+                  <td>Mozzarella</td>
+                  <td>52-61</td>
+                  <td>0.97</td>
+                  <td>5.2-5.4</td>
+                  <td>&gt;17.5</td>
+                  <td>19-22</td>
+                  <td>3.6-3.8</td>
+                  <td>54-63</td>
+                  <td>25-45</td>
+                </tr>
+                <tr>
+                  <td>Queso Doblecrema</td>
+                  <td>51.86</td>
+                  <td>0.97</td>
+                  <td>5.1-5.4</td>
+                  <td>14</td>
+                  <td>18.81</td>
+                  <td>5.34</td>
+                  <td>54-63</td>
+                  <td>25-45</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </Container>
       </section>
     </>
