@@ -28,8 +28,8 @@ const Matrix = () => {
       let validProps = [];
       for (const prop in material) {
         if (
-          typeof material[prop] === "object"
-          // validateMaterialProp(values[prop], material[prop])
+          typeof material[prop] === "object" &&
+          validateMaterialProp(values[prop], material[prop])
         ) {
           validProps = [...validProps, prop];
         }
