@@ -11,7 +11,7 @@ import {
   Col,
 } from "reactstrap";
 
-const TextInput = ({ label, ...props }) => {
+const TextInput = ({ label, placeholder, ...props }) => {
   const [field, meta] = useField(props);
   return (
     <>
@@ -26,7 +26,7 @@ const TextInput = ({ label, ...props }) => {
             {...props}
             type="number"
             step="0.01"
-            placeholder="0.00"
+            placeholder={`Studied between ${placeholder}`}
           />
           {props.unittext && <InputGroupText>{props.unittext}</InputGroupText>}
         </InputGroup>
@@ -86,12 +86,14 @@ const MatrixForm = ({ handleOnSubmit }) => {
                 min="0"
                 max="100"
                 unittext="%"
+                placeholder="48 and 63"
               />
               <TextInput
                 label="Water Activity"
                 name="waterActivity"
                 min="0"
                 max="1"
+                placeholder="0.9 and 0.98"
               />
               <TextInput
                 label="Moinsture Non-Fat Substance (MNFS)"
@@ -99,8 +101,16 @@ const MatrixForm = ({ handleOnSubmit }) => {
                 min="0"
                 max="100"
                 unittext="%"
+                placeholder="54 and 69"
               />
-              <TextInput label="pH" name="ph" type="decimal" min="0" max="14" />
+              <TextInput
+                label="pH"
+                name="ph"
+                type="decimal"
+                min="0"
+                max="14"
+                placeholder="5.1 and 6.35"
+              />
             </Col>
             <Col>
               <TextInput
@@ -109,6 +119,7 @@ const MatrixForm = ({ handleOnSubmit }) => {
                 min="0"
                 max="100"
                 unittext="%"
+                placeholder="14 and 46.25"
               />
               <TextInput
                 label="Fat in Dry Matter (FDM)"
@@ -116,6 +127,7 @@ const MatrixForm = ({ handleOnSubmit }) => {
                 min="0"
                 max="100"
                 unittext="%"
+                placeholder="25 and 60"
               />
               <TextInput
                 label="Protein"
@@ -123,6 +135,7 @@ const MatrixForm = ({ handleOnSubmit }) => {
                 min="0"
                 max="100"
                 unittext="%"
+                placeholder="12.73 and 22"
               />
               <TextInput
                 label="Minerals"
@@ -130,6 +143,7 @@ const MatrixForm = ({ handleOnSubmit }) => {
                 min="0"
                 max="100"
                 unittext="%"
+                placeholder="1.1 and 5.34"
               />
             </Col>
           </Row>
