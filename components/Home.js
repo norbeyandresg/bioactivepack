@@ -361,14 +361,14 @@ const Home = () => {
                 </tr>
                 <tr>
                   <th className="table-light" />
-                  <th scope="col">Humidity</th>
+                  <th scope="col">Humidity (% g/g)</th>
                   <th scope="col">WA</th>
                   <th scope="col">pH</th>
-                  <th scope="col">Fat</th>
-                  <th scope="col">Protein</th>
-                  <th scope="col">Minerals</th>
-                  <th scope="col">MNFS</th>
-                  <th scope="col">FDM</th>
+                  <th scope="col">Fat (%)</th>
+                  <th scope="col">Protein (%)</th>
+                  <th scope="col">Minerals (%)</th>
+                  <th scope="col">MNFS (%)</th>
+                  <th scope="col">FDM (%)</th>
                 </tr>
               </thead>
               <tbody>
